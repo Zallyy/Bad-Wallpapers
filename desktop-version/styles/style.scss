@@ -1,0 +1,35 @@
+/* variable */
+$primary-color: darkblue;
+@mixin flexCenter {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* utility */
+
+.flex-container {
+  display: flex;
+}
+
+/* header */
+
+header {
+  background-color: $primary-color;
+  color: white;
+  @include flexCenter();
+  .flex-items {
+  }
+  input {
+    flex: 3;
+  }
+  div,
+  h1 {
+    flex: 0.5;
+  }
+  h1 {
+    text-align: left;
+  }
+  i {
+    flex: 1;
+  }
+}
