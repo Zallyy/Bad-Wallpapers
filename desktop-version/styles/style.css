@@ -31,15 +31,17 @@ header {
 }
 
 header input {
-  -webkit-box-flex: 3;
-      -ms-flex: 3;
-          flex: 3;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 1.2rem;
 }
 
-header div {
+header #header-logo-div {
   -webkit-box-flex: 0.5;
       -ms-flex: 0.5;
           flex: 0.5;
+  text-align: right;
 }
 
 header h1 {
@@ -51,9 +53,26 @@ header h1 {
   font-size: 1.5rem;
 }
 
+header #header-icon-div {
+  -webkit-box-flex: 1.6;
+      -ms-flex: 1.6;
+          flex: 1.6;
+}
+
 header i {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  font-size: 2.5rem;
+  padding: 10px 20px;
+  -webkit-transition: background-color 1s ease;
+  transition: background-color 1s ease;
+}
+
+header i:hover {
+  cursor: pointer;
+  background-color: #1f325c;
+}
+
+/* body */
+.gallery {
+  margin: 20px 100px;
 }
 /*# sourceMappingURL=style.css.map */

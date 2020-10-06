@@ -33,10 +33,12 @@ header {
   .flex-items {
   }
   input {
-    flex: 3;
+    flex: 1;
+    font-size: 1.2rem;
   }
-  div {
+  #header-logo-div {
     flex: 0.5;
+    text-align: right;
   }
   h1 {
     flex: 1.1;
@@ -44,7 +46,21 @@ header {
     font-family: "Sansita Swashed", cursive;
     font-size: 1.5rem;
   }
-  i {
-    flex: 1;
+  #header-icon-div {
+    flex: 1.6;
   }
+  i {
+    font-size: 2.5rem;
+    padding: 10px 20px;
+    transition: background-color 1s ease;
+    &:hover {
+      cursor: pointer;
+      background-color: #1f325c;
+    }
+  }
+}
+
+/* body */
+.gallery {
+  margin: 20px 100px;
 }
