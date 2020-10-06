@@ -1,5 +1,18 @@
-/* variable */
-$primary-color: darkblue;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Sansita+Swashed:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* variables */
+$PrimaryColor: #14213d;
+$SecondaryColor: #f3f3f3;
+
 @mixin flexCenter {
   justify-content: center;
   align-items: center;
@@ -14,7 +27,7 @@ $primary-color: darkblue;
 /* header */
 
 header {
-  background-color: $primary-color;
+  background-color: $PrimaryColor;
   color: white;
   @include flexCenter();
   .flex-items {
@@ -22,12 +35,14 @@ header {
   input {
     flex: 3;
   }
-  div,
-  h1 {
+  div {
     flex: 0.5;
   }
   h1 {
+    flex: 1.1;
     text-align: left;
+    font-family: "Sansita Swashed", cursive;
+    font-size: 1.5rem;
   }
   i {
     flex: 1;
