@@ -6,54 +6,34 @@
     <title>Bad Wallpapers</title>
   </head>
   <body>
-    <nav>
-      <div class="flex-container">
-        <div class="flex-items"><img id="nav-logo" src="" alt="" /></div>
-        <div class="flex-items">Bad Wallpapers</div>
-        <div class="flex-items">Search</div>
-        <div class="flex-items"><input type="text" /></div>
-        <div class="flex-items randomizer-btn"></div>
+    <header class="flex-container">
+      <div class="logo">
+        <img src="./images/logo.jpg" alt="logo" />
       </div>
-    </nav>
-    <main>
-      <div class="flex-container">
-        <div class="flex-items">
-          <a href="#">
-            <img src="" alt="" />
-            <div class="img-size-container"><p>numbers</p></div>
-          </a>
-        </div>
-        <div class="flex-items">
-          <a href="#">
-            <img src="" alt="" />
-            <div class="img-size-container"><p>numbers</p></div>
-          </a>
-        </div>
-        <div class="flex-items">
-          <a href="#">
-            <img src="" alt="" />
-            <div class="img-size-container"><p>numbers</p></div>
-          </a>
-        </div>
-        <div class="flex-items">
-          <a href="#">
-            <img src="" alt="" />
-            <div class="img-size-container"><p>numbers</p></div>
-          </a>
-        </div>
-        <div class="flex-items">
-          <a href="#">
-            <img src="" alt="" />
-            <div class="img-size-container"><p>numbers</p></div>
-          </a>
-        </div>
-        <div class="flex-items">
-          <a href="#">
-            <img src="" alt="" />
-            <div class="img-size-container"><p>numbers</p></div>
-          </a>
-        </div>
+      <h1 class="site-name">Bad Wallpapers</h1>
+      <input type="text" class="search" />
+      <i class="random-image">Rand</i>
+    </header>
+
+    <section class="gallery">
+      <h3 class="results">Results: <span class="result">2,112</span></h3>
+      <div class="images-container">
+        <!--Each wallpaper will be wrapped in this. I was thinking you generate this with JS-->
+        <a href="#">
+          <div class="wallpaper-container">
+            <img
+              class="wallpaper"
+              src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.XKumso7ljqXEHgzlYSl2EwHaHa%26pid%3DApi&f=1"
+              alt=""
+              width="200px"
+              height="auto"
+            />
+            <div class="aspect-ratio-container">
+              <h3 class="aspect-ratio">1920x1080</h3>
+            </div>
+          </div>
+        </a>
       </div>
-    </main>
+    </section>
   </body>
 </html>
