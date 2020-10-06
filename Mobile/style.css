@@ -3,6 +3,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
+  color: black;
 }
 
 body {
@@ -14,7 +15,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   font-family: 'Roboto', sans-serif;
-  background: #222222;
+  background: #f3f3f3;
 }
 
 .main-container {
@@ -59,10 +60,11 @@ header i {
 
 .gallery {
   padding: 0 10%;
-  background: #222222;
+  background: #f3f3f3;
 }
 
 .gallery .logo-and-site {
+  margin: 5px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
