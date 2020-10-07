@@ -73,6 +73,59 @@ header i:hover {
 
 /* body */
 .gallery {
-  margin: 20px 100px;
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.gallery .results {
+  margin: 10px 0 10px 40px;
+}
+
+.images-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.images-container .aspect-ratio-container {
+  background: rgba(0, 0, 0, 0.356);
+  position: relative;
+  top: -35px;
+  padding: 5px 0;
+  width: 200px;
+  margin: auto;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+
+.images-container .aspect-ratio-container.visible {
+  opacity: 1;
+}
+
+.images-container .aspect-ratio {
+  color: white;
+  font-weight: 200;
+}
+
+.images-container > a {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-decoration: none;
+}
+
+.wallpaper-container {
+  margin: 10px;
 }
 /*# sourceMappingURL=style.css.map */

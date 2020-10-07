@@ -30,8 +30,6 @@ header {
   background-color: $PrimaryColor;
   color: white;
   @include flexCenter();
-  .flex-items {
-  }
   input {
     flex: 1;
     font-size: 1.2rem;
@@ -62,5 +60,42 @@ header {
 
 /* body */
 .gallery {
-  margin: 20px 100px;
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 20px;
+  .results {
+    margin: 10px 0 10px 40px;
+  }
+}
+
+.images-container {
+  display: flex;
+  @include flexCenter();
+  flex-wrap: wrap;
+  .aspect-ratio-container {
+    background: rgba(0, 0, 0, 0.356);
+    position: relative;
+    top: -35px;
+    padding: 5px 0;
+    width: 200px;
+    margin: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    &.visible {
+      opacity: 1;
+    }
+  }
+  .aspect-ratio {
+    color: white;
+    font-weight: 200;
+  }
+}
+
+.images-container > a {
+  flex: 1;
+  text-decoration: none;
+}
+
+.wallpaper-container {
+  margin: 10px;
 }
