@@ -60,15 +60,18 @@ header {
 
 /* body */
 .gallery {
-  max-width: 1400px;
-  margin: auto;
   padding: 0 20px;
+  background-color: aqua;
+  border-radius: 20px;
   .results {
-    margin: 10px 0 10px 40px;
+    margin-left: 10%;
+    padding: 10px 0;
   }
 }
 
 .images-container {
+  max-width: 1400px;
+  margin: auto;
   display: flex;
   @include flexCenter();
   flex-wrap: wrap;
