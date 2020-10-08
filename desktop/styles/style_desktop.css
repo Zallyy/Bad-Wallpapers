@@ -66,14 +66,20 @@ header #header-icon-div {
           flex: 1.6;
 }
 
-header i {
+header i.fa-search {
+  position: relative;
+  left: -30px;
+  color: black;
+}
+
+header i.fa-random {
   font-size: 2.5rem;
   padding: 10px 20px;
   -webkit-transition: background-color 1s ease;
   transition: background-color 1s ease;
 }
 
-header i:hover {
+header i.fa-random:hover {
   cursor: pointer;
   background-color: #1f325c;
 }
