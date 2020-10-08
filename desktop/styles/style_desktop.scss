@@ -31,6 +31,8 @@ $SecondaryColor: #f3f3f3;
 /* header */
 
 header {
+  position: sticky;
+  top: 0;
   background-color: $PrimaryColor;
   color: white;
   @include flexCenter();
@@ -65,8 +67,6 @@ header {
 /* body */
 .gallery {
   padding: 0 20px;
-  // background-color: aqua;
-  border-radius: 20px;
   .results {
     margin-left: 10%;
     padding: 10px 0;
@@ -79,14 +79,20 @@ header {
   display: flex;
   @include flexCenter();
   flex-wrap: wrap;
+  img {
+    border-radius: 10px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
   .aspect-ratio-container {
     background: rgba(0, 0, 0, 0.356);
     position: relative;
-    top: -35px;
+    top: -38px;
     padding: 5px 0;
-    width: 200px;
     margin: auto;
     opacity: 0;
+    border-radius: 10px;
     transition: opacity 0.5s ease;
     &.visible {
       opacity: 1;
@@ -95,6 +101,9 @@ header {
   .aspect-ratio {
     color: white;
     font-weight: 200;
+  }
+  a {
+    cursor: default;
   }
 }
 

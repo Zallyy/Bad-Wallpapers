@@ -23,6 +23,9 @@ body {
 
 /* header */
 header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   background-color: #14213d;
   color: white;
   -webkit-box-pack: center;
@@ -78,7 +81,6 @@ header i:hover {
 /* body */
 .gallery {
   padding: 0 20px;
-  border-radius: 20px;
 }
 
 .gallery .results {
@@ -103,14 +105,22 @@ header i:hover {
       flex-wrap: wrap;
 }
 
+.images-container img {
+  border-radius: 10px;
+}
+
+.images-container img:hover {
+  cursor: pointer;
+}
+
 .images-container .aspect-ratio-container {
   background: rgba(0, 0, 0, 0.356);
   position: relative;
-  top: -35px;
+  top: -38px;
   padding: 5px 0;
-  width: 200px;
   margin: auto;
   opacity: 0;
+  border-radius: 10px;
   -webkit-transition: opacity 0.5s ease;
   transition: opacity 0.5s ease;
 }
@@ -122,6 +132,10 @@ header i:hover {
 .images-container .aspect-ratio {
   color: white;
   font-weight: 200;
+}
+
+.images-container a {
+  cursor: default;
 }
 
 .images-container > a {
