@@ -91,9 +91,12 @@ header {
   max-width: 1400px;
   margin: auto;
   display: flex;
-  @include flexCenter();
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
   flex-wrap: wrap;
   img {
+    width: 320px;
     border-radius: 10px;
     &:hover {
       cursor: pointer;
@@ -155,6 +158,20 @@ header {
   }
 }
 
+#tags {
+  width: 200px;
+  margin: auto;
+  .tag {
+    background-color: $PrimaryColor;
+    margin-top: 20px;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+}
+
 #single-img-section {
   .flex-container {
     height: 100%;
@@ -163,6 +180,17 @@ header {
       flex: 1;
       padding-top: 50px;
       text-align: center;
+      h3 {
+        font-size: 1.5rem;
+      }
+
+      #aspect-ratio {
+        margin-top: 20px;
+        text-align: center;
+      }
+      #full-img-link-container {
+        margin-top: 20px;
+      }
     }
     #flex-item2 {
       flex: 5;
@@ -178,9 +206,6 @@ header {
       //     color: white;
       //   }
       // }
-      #full-img-link-container {
-        text-align: center;
-      }
     }
     .flex-items {
       justify-content: center;

@@ -115,15 +115,16 @@ header i.fa-home:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   text-align: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .images-container img {
+  width: 320px;
   border-radius: 10px;
 }
 
@@ -208,6 +209,21 @@ header i.fa-home:hover {
           flex: 0.5;
 }
 
+#tags {
+  width: 200px;
+  margin: auto;
+}
+
+#tags .tag {
+  background-color: #14213d;
+  margin-top: 20px;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
 #single-img-section .flex-container {
   height: 100%;
   width: 100%;
@@ -221,14 +237,23 @@ header i.fa-home:hover {
   text-align: center;
 }
 
+#single-img-section .flex-container #flex-item1 h3 {
+  font-size: 1.5rem;
+}
+
+#single-img-section .flex-container #flex-item1 #aspect-ratio {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#single-img-section .flex-container #flex-item1 #full-img-link-container {
+  margin-top: 20px;
+}
+
 #single-img-section .flex-container #flex-item2 {
   -webkit-box-flex: 5;
       -ms-flex: 5;
           flex: 5;
-}
-
-#single-img-section .flex-container #flex-item2 #full-img-link-container {
-  text-align: center;
 }
 
 #single-img-section .flex-container .flex-items {

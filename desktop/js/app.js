@@ -6,7 +6,7 @@ images.forEach((img) => {
     //removed aspect ratio selector
 
     //this is selecting the aspect ratio container
-    img.parentElement.nextElementSibling.style.width = 200 + "px";
+    img.parentElement.nextElementSibling.style.width = 320 + "px";
     img.parentElement.nextElementSibling.classList.add("visible");
   });
   img.addEventListener("mouseout", (e) => {
