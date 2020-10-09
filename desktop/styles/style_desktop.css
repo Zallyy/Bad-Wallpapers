@@ -84,6 +84,18 @@ header i.fa-random:hover {
   background-color: #1f325c;
 }
 
+header i.fa-home {
+  font-size: 2.5rem;
+  padding: 10px 20px;
+  -webkit-transition: background-color 1s ease;
+  transition: background-color 1s ease;
+}
+
+header i.fa-home:hover {
+  cursor: pointer;
+  background-color: #1f325c;
+}
+
 /* body */
 .gallery {
   padding: 0 20px;
@@ -153,5 +165,98 @@ header i.fa-random:hover {
 
 .wallpaper-container {
   margin: 10px;
+}
+
+/* ---------------------single img html-------------------------- */
+#single-img-html .flex-container .flex-items {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#single-img-html .flex-container .site-name {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+}
+
+#single-img-html .flex-container .search {
+  -webkit-box-flex: 0.8;
+      -ms-flex: 0.8;
+          flex: 0.8;
+}
+
+#single-img-html .flex-container #header-logo-div {
+  -webkit-box-flex: 0.1;
+      -ms-flex: 0.1;
+          flex: 0.1;
+}
+
+#single-img-html .flex-container #home-i-container {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+}
+
+#single-img-html .flex-container #home-i-container a {
+  color: white;
+}
+
+#single-img-html .flex-container #header-icon-div {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+}
+
+#single-img-section .flex-container {
+  height: 100%;
+  width: 100%;
+}
+
+#single-img-section .flex-container #flex-item1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-top: 50px;
+  text-align: center;
+}
+
+#single-img-section .flex-container #flex-item2 {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+}
+
+#single-img-section .flex-container #flex-item2 #full-img-link-container {
+  text-align: center;
+}
+
+#single-img-section .flex-container .flex-items {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px;
+}
+
+#single-img-section .flex-container .flex-items img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+#single-img-section .flex-container ul {
+  list-style: none;
+  display: inline;
+}
+
+#single-img-section .flex-container ul li {
+  line-height: 2;
+  margin: 5px 20%;
+  border-radius: 20px;
+  background-color: #14213d;
+  color: white;
 }
 /*# sourceMappingURL=style_desktop.css.map */
