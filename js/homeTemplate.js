@@ -3,7 +3,7 @@ const results = document.getElementById('result');
 results.innerHTML = wallpapers.length;
 wallpapers.forEach( ({image, aspectRatio, id}) => {
     document.querySelector('#images-container').innerHTML += `            
-    <a id='wallpaper-link' href="./wallpaper.html?=${id}">
+    <a class='wallpaper-link' href="./wallpaper.html?=${id}">
         <div class="wallpaper-container">
             <div class="image-container">
                 <img class="wallpaper" src="${image}" alt="wallpaper" width="200px" height="auto">

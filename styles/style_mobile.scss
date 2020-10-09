@@ -12,6 +12,10 @@ $SecondaryColor: #f3f3f3;
     color: black;
 }
 
+a:visited {
+    color: $PrimaryColor;
+}
+
 body {
     display: flex;
     width: 100%;
