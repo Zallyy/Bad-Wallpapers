@@ -22,6 +22,7 @@ function CreatePage ({image, aspectRatio, tags, dateAdded}) {
         <button class="tag">${tag}</button>
         `
     })
+    document.querySelectorAll('.wallpaper-link').forEach(link => link.href=`${image}`)
 }
 
 CreatePage(wallpapers[id])
