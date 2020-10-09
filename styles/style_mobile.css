@@ -10,6 +10,10 @@
   color: black;
 }
 
+a:visited {
+  color: #14213D;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -75,6 +79,10 @@ header .fa-home {
 
 header .fa-random {
   margin-left: 15px;
+}
+
+header i:hover {
+  cursor: pointer;
 }
 
 header .fa-search {
