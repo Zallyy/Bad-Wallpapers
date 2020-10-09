@@ -221,7 +221,7 @@ header i.fa-home:hover {
   color: white;
   padding: 5px 10px;
   border-radius: 10px;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 #single-img-section .flex-container {
@@ -238,22 +238,41 @@ header i.fa-home:hover {
 }
 
 #single-img-section .flex-container #flex-item1 h3 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 #single-img-section .flex-container #flex-item1 #aspect-ratio {
-  margin-top: 20px;
+  margin-top: 50px;
   text-align: center;
+  font-size: 1.2rem;
+}
+
+#single-img-section .flex-container #flex-item1 .link-to-image {
+  margin-top: 30px;
+  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.2em;
+}
+
+#single-img-section .flex-container #flex-item1 .link-to-image a {
+  color: #14213d;
 }
 
 #single-img-section .flex-container #flex-item1 #full-img-link-container {
-  margin-top: 20px;
+  margin-top: 50px;
+  font-size: 1.2rem;
 }
 
 #single-img-section .flex-container #flex-item2 {
-  -webkit-box-flex: 5;
-      -ms-flex: 5;
-          flex: 5;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  padding: 0 200px 0 50px;
 }
 
 #single-img-section .flex-container .flex-items {

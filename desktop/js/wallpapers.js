@@ -47,7 +47,7 @@ const wallpapers = [
     image:
       "https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?cs=srgb&dl=pexels-james-wheeler-417074.jpg&fm=jpg",
     aspectRatio: "1920x1080",
-    tags: ["Nature", "Beautifle", "Relaxing", "Lake"],
+    tags: ["Nature", "Beautiful", "Relaxing", "Lake"],
     dateAdded: "10-09-20",
     id: "6",
   },
