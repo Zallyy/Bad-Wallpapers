@@ -28,3 +28,9 @@ const wallpapers = [
         id: "3"
     }
 ]
+
+//Random Button Functionality 
+const randomButton = document.querySelectorAll('.fa-random')
+randomButton.forEach(button => button.addEventListener('click', () => {
+    window.location.href = `./wallpaper.html?=${Math.floor((Math.random() * wallpapers.length) + 0)}`
+}))

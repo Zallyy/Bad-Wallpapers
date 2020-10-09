@@ -66,6 +66,9 @@ header {
     .fa-random {
         margin-left: 15px;
     }
+    i:hover {
+        cursor: pointer;
+    }
     .fa-search {
         z-index: 1001;
         color: $PrimaryColor;
