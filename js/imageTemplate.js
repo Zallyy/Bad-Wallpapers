@@ -6,11 +6,11 @@ const url = window.location.href; //Get URL
 let id = url.indexOf('=')+1
 id = url[id]
 
-let dateEl = document.getElementById('date')
-let wallpaperEl = document.getElementById('wallpaper')
-let tagsEl = document.getElementById('tags')
-let aspectRatioEl = document.getElementById('aspect-ratio')
-let fullsize = document.getElementById('full-size')
+const dateEl = document.getElementById('date')
+const wallpaperEl = document.getElementById('wallpaper')
+const tagsEl = document.getElementById('tags')
+const aspectRatioEl = document.getElementById('aspect-ratio')
+const fullsize = document.getElementById('full-size')
 
 function CreatePage ({image, aspectRatio, tags, dateAdded}) {
     dateEl.innerHTML = dateAdded
