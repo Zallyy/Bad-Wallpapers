@@ -1,3 +1,4 @@
+
 const results = document.getElementById('result');
 
 results.innerHTML = wallpapers.length;

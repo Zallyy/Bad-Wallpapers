@@ -1,19 +1,16 @@
-const wallpaperContainerNode = document.getElementsByClassName(
-  "wallpaper-container"
-);
+const images = document.querySelectorAll(".wallpaper-container img");
 
-const aspectRatioContainerNode = document.getElementsByClassName(
-  "aspect-ratio-container"
-);
+// renamed item to img
+images.forEach((img) => {
+  img.addEventListener("mouseover", (e) => {
+    //removed aspect ratio selector
 
-const wallpaperContainers = Array.from(wallpaperContainerNode);
-const aspectRatioContainers = Array.from(aspectRatioContainerNode);
-
-wallpaperContainers.forEach((item) => {
-  item.addEventListener("mouseover", (e) => {
-    item.lastElementChild.classList.add("visible");
+    //this is selecting the aspect ratio container
+    img.parentElement.nextElementSibling.style.width = 320 + "px";
+    img.parentElement.nextElementSibling.classList.add("visible");
   });
-  item.addEventListener("mouseout", (e) => {
-    item.lastElementChild.classList.remove("visible");
+  img.addEventListener("mouseout", (e) => {
+    img.parentElement.nextElementSibling.classList.remove("visible");
   });
 });
+

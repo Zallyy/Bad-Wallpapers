@@ -1,431 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
-    crossorigin="anonymous"
-  />
-    <link rel="stylesheet" href="styles/style_desktop.css" media="(min-width: 501px)" />
-    <link rel="stylesheet" href="styles/style_mobile.css" media="(max-width: 500px)" />
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/style_desktop.css"
+      media="(min-width: 501px)"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/style_mobile.css"
+      media="(max-width: 500px)"
+    />
     <title>Bad Wallpapers</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="desktop-ver">
-          <!-- added the class of flex items to each item
+      <!-- added the class of flex items to each item
             I also had to add a div for the icon because the 
           whole section of it (from the search to right end of
           desktop) was clickable-->
-    <header class="flex-container">
+      <header class="flex-container">
         <div id="header-logo-div" class="logo flex-items">
-          <img src="./images/logo.jpg" alt="logo" />
+          <img
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e282f310-ab7d-4519-a888-3e339bcac12e/dafg7uw-c04ae279-87ad-46b8-834e-e4a967a25551.png/v1/fill/w_900,h_1123,q_75,strp/_original__anime_girl_render_by_lckiwi-dafg7uw.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sIm9iaiI6W1t7InBhdGgiOiIvZi9lMjgyZjMxMC1hYjdkLTQ1MTktYTg4OC0zZTMzOWJjYWMxMmUvZGFmZzd1dy1jMDRhZTI3OS04N2FkLTQ2YjgtODM0ZS1lNGE5NjdhMjU1NTEucG5nIiwid2lkdGgiOiI8PTkwMCIsImhlaWdodCI6Ijw9MTEyMyJ9XV19.Eb3_f2V-B8E9KNfdbAivf0iHbuU_CTr5CaSFspq6gaI"
+            alt="logo"
+            width="50px"
+            height="auto"
+          />
         </div>
         <h1 class="site-name flex-items">Bad Wallpapers</h1>
-        <input type="text" class="search flex-items" placeholder="search" />
+        <input
+          type="text"
+          class="search flex-items"
+          placeholder="search by tag"
+        />
+        <i class="fa fa-search" aria-hidden="true"></i>
         <div id="header-icon-div" class="flex-items">
           <i class="fas fa-random"></i>
         </div>
       </header>
-  
+
       <section class="gallery">
-        <h3 class="results">Results: <span class="result">2,112</span></h3>
-        <div class="images-container">
-          <!--Each wallpaper will be wrapped in this. I was thinking you generate this with JS-->
-          <a href="#">
-            <div class="wallpaper-container">
-              <img
-                class="wallpaper"
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.XKumso7ljqXEHgzlYSl2EwHaHa%26pid%3DApi&f=1"
-                alt=""
-                width="200px"
-                height="auto"
-              />
-              <div class="aspect-ratio-container">
-                <h3 class="aspect-ratio">1920x1080</h3>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="wallpaper-container">
-              <img
-                class="wallpaper"
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.XKumso7ljqXEHgzlYSl2EwHaHa%26pid%3DApi&f=1"
-                alt=""
-                width="200px"
-                height="auto"
-              />
-              <div class="aspect-ratio-container">
-                <h3 class="aspect-ratio">1920x1080</h3>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="wallpaper-container">
-              <img
-                class="wallpaper"
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.XKumso7ljqXEHgzlYSl2EwHaHa%26pid%3DApi&f=1"
-                alt=""
-                width="200px"
-                height="auto"
-              />
-              <div class="aspect-ratio-container">
-                <h3 class="aspect-ratio">1920x1080</h3>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="wallpaper-container">
-              <img
-                class="wallpaper"
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.XKumso7ljqXEHgzlYSl2EwHaHa%26pid%3DApi&f=1"
-                alt=""
-                width="200px"
-                height="auto"
-              />
-              <div class="aspect-ratio-container">
-                <h3 class="aspect-ratio">1920x1080</h3>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="wallpaper-container">
-              <img
-                class="wallpaper"
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.XKumso7ljqXEHgzlYSl2EwHaHa%26pid%3DApi&f=1"
-                alt=""
-                width="200px"
-                height="auto"
-              />
-              <div class="aspect-ratio-container">
-                <h3 class="aspect-ratio">1920x1080</h3>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="wallpaper-container">
-              <img
-                class="wallpaper"
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.XKumso7ljqXEHgzlYSl2EwHaHa%26pid%3DApi&f=1"
-                alt=""
-                width="200px"
-                height="auto"
-              />
-              <div class="aspect-ratio-container">
-                <h3 class="aspect-ratio">1920x1080</h3>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="wallpaper-container">
-              <img
-                class="wallpaper"
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.XKumso7ljqXEHgzlYSl2EwHaHa%26pid%3DApi&f=1"
-                alt=""
-                width="200px"
-                height="auto"
-              />
-              <div class="aspect-ratio-container">
-                <h3 class="aspect-ratio">1920x1080</h3>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="wallpaper-container">
-              <img
-                class="wallpaper"
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.XKumso7ljqXEHgzlYSl2EwHaHa%26pid%3DApi&f=1"
-                alt=""
-                width="200px"
-                height="auto"
-              />
-              <div class="aspect-ratio-container">
-                <h3 class="aspect-ratio">1920x1080</h3>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="wallpaper-container">
-              <img
-                class="wallpaper"
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.XKumso7ljqXEHgzlYSl2EwHaHa%26pid%3DApi&f=1"
-                alt=""
-                width="200px"
-                height="auto"
-              />
-              <div class="aspect-ratio-container">
-                <h3 class="aspect-ratio">1920x1080</h3>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="wallpaper-container">
-              <img
-                class="wallpaper"
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.XKumso7ljqXEHgzlYSl2EwHaHa%26pid%3DApi&f=1"
-                alt=""
-                width="200px"
-                height="auto"
-              />
-              <div class="aspect-ratio-container">
-                <h3 class="aspect-ratio">1920x1080</h3>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="wallpaper-container">
-              <img
-                class="wallpaper"
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.XKumso7ljqXEHgzlYSl2EwHaHa%26pid%3DApi&f=1"
-                alt=""
-                width="200px"
-                height="auto"
-              />
-              <div class="aspect-ratio-container">
-                <h3 class="aspect-ratio">1920x1080</h3>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="wallpaper-container">
-              <img
-                class="wallpaper"
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.XKumso7ljqXEHgzlYSl2EwHaHa%26pid%3DApi&f=1"
-                alt=""
-                width="200px"
-                height="auto"
-              />
-              <div class="aspect-ratio-container">
-                <h3 class="aspect-ratio">1920x1080</h3>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="wallpaper-container">
-              <img
-                class="wallpaper"
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.XKumso7ljqXEHgzlYSl2EwHaHa%26pid%3DApi&f=1"
-                alt=""
-                width="200px"
-                height="auto"
-              />
-              <div class="aspect-ratio-container">
-                <h3 class="aspect-ratio">1920x1080</h3>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="wallpaper-container">
-              <img
-                class="wallpaper"
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.XKumso7ljqXEHgzlYSl2EwHaHa%26pid%3DApi&f=1"
-                alt=""
-                width="200px"
-                height="auto"
-              />
-              <div class="aspect-ratio-container">
-                <h3 class="aspect-ratio">1920x1080</h3>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="wallpaper-container">
-              <img
-                class="wallpaper"
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.XKumso7ljqXEHgzlYSl2EwHaHa%26pid%3DApi&f=1"
-                alt=""
-                width="200px"
-                height="auto"
-              />
-              <div class="aspect-ratio-container">
-                <h3 class="aspect-ratio">1920x1080</h3>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="wallpaper-container">
-              <img
-                class="wallpaper"
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.XKumso7ljqXEHgzlYSl2EwHaHa%26pid%3DApi&f=1"
-                alt=""
-                width="200px"
-                height="auto"
-              />
-              <div class="aspect-ratio-container">
-                <h3 class="aspect-ratio">1920x1080</h3>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="wallpaper-container">
-              <img
-                class="wallpaper"
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.XKumso7ljqXEHgzlYSl2EwHaHa%26pid%3DApi&f=1"
-                alt=""
-                width="200px"
-                height="auto"
-              />
-              <div class="aspect-ratio-container">
-                <h3 class="aspect-ratio">1920x1080</h3>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="wallpaper-container">
-              <img
-                class="wallpaper"
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.XKumso7ljqXEHgzlYSl2EwHaHa%26pid%3DApi&f=1"
-                alt=""
-                width="200px"
-                height="auto"
-              />
-              <div class="aspect-ratio-container">
-                <h3 class="aspect-ratio">1920x1080</h3>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="wallpaper-container">
-              <img
-                class="wallpaper"
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.XKumso7ljqXEHgzlYSl2EwHaHa%26pid%3DApi&f=1"
-                alt=""
-                width="200px"
-                height="auto"
-              />
-              <div class="aspect-ratio-container">
-                <h3 class="aspect-ratio">1920x1080</h3>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="wallpaper-container">
-              <img
-                class="wallpaper"
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.XKumso7ljqXEHgzlYSl2EwHaHa%26pid%3DApi&f=1"
-                alt=""
-                width="200px"
-                height="auto"
-              />
-              <div class="aspect-ratio-container">
-                <h3 class="aspect-ratio">1920x1080</h3>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="wallpaper-container">
-              <img
-                class="wallpaper"
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.XKumso7ljqXEHgzlYSl2EwHaHa%26pid%3DApi&f=1"
-                alt=""
-                width="200px"
-                height="auto"
-              />
-              <div class="aspect-ratio-container">
-                <h3 class="aspect-ratio">1920x1080</h3>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="wallpaper-container">
-              <img
-                class="wallpaper"
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.XKumso7ljqXEHgzlYSl2EwHaHa%26pid%3DApi&f=1"
-                alt=""
-                width="200px"
-                height="auto"
-              />
-              <div class="aspect-ratio-container">
-                <h3 class="aspect-ratio">1920x1080</h3>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="wallpaper-container">
-              <img
-                class="wallpaper"
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.XKumso7ljqXEHgzlYSl2EwHaHa%26pid%3DApi&f=1"
-                alt=""
-                width="200px"
-                height="auto"
-              />
-              <div class="aspect-ratio-container">
-                <h3 class="aspect-ratio">1920x1080</h3>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="wallpaper-container">
-              <img
-                class="wallpaper"
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.XKumso7ljqXEHgzlYSl2EwHaHa%26pid%3DApi&f=1"
-                alt=""
-                width="200px"
-                height="auto"
-              />
-              <div class="aspect-ratio-container">
-                <h3 class="aspect-ratio">1920x1080</h3>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="wallpaper-container">
-              <img
-                class="wallpaper"
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.XKumso7ljqXEHgzlYSl2EwHaHa%26pid%3DApi&f=1"
-                alt=""
-                width="200px"
-                height="auto"
-              />
-              <div class="aspect-ratio-container">
-                <h3 class="aspect-ratio">1920x1080</h3>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="wallpaper-container">
-              <img
-                class="wallpaper"
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.XKumso7ljqXEHgzlYSl2EwHaHa%26pid%3DApi&f=1"
-                alt=""
-                width="200px"
-                height="auto"
-              />
-              <div class="aspect-ratio-container">
-                <h3 class="aspect-ratio">1920x1080</h3>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="wallpaper-container">
-              <img
-                class="wallpaper"
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.XKumso7ljqXEHgzlYSl2EwHaHa%26pid%3DApi&f=1"
-                alt=""
-                width="200px"
-                height="auto"
-              />
-              <div class="aspect-ratio-container">
-                <h3 class="aspect-ratio">1920x1080</h3>
-              </div>
-            </div>
-          </a>
+        <h3 class="results">
+          Results: <span id="result" class="result"></span>
+        </h3>
+        <div id="images-container" class="images-container">
+          <!-- Wallpapers generated by js -->
         </div>
       </section>
     </div>
-
-  
 
     <div class="mobile-ver">
         <div class="main-container">
             <header class="flex-container">
                 <input type="text" class="search flex-items" placeholder="search by tag">
                 <i class="fa fa-search" aria-hidden="true"></i>
-
                 <div id="header-icon-div" class="flex-items">
                     <i class="fa fa-random"></i>
                 </div>        
