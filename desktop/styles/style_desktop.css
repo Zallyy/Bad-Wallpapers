@@ -28,16 +28,14 @@ header {
   top: 0;
   background-color: #14213d;
   color: white;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 header input {
+  min-width: 800px;
+  margin: 10px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -55,9 +53,13 @@ header h1 {
   -webkit-box-flex: 1.1;
       -ms-flex: 1.1;
           flex: 1.1;
+  margin-left: 5px;
   text-align: left;
   font-family: "Sansita Swashed", cursive;
   font-size: 1.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 header #header-icon-div {
@@ -68,8 +70,10 @@ header #header-icon-div {
 
 header i.fa-search {
   position: relative;
-  left: -30px;
+  margin-top: 23px;
+  left: -45px;
   color: black;
+  font-size: 1.3em;
 }
 
 header i.fa-random {
@@ -86,7 +90,7 @@ header i.fa-random:hover {
 
 header i.fa-home {
   font-size: 2.5rem;
-  padding: 10px 20px;
+  margin: 10px 20px;
   -webkit-transition: background-color 1s ease;
   transition: background-color 1s ease;
 }
@@ -194,9 +198,9 @@ header i.fa-home:hover {
 }
 
 #single-img-html .flex-container #home-i-container {
-  -webkit-box-flex: 0.5;
-      -ms-flex: 0.5;
-          flex: 0.5;
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
 }
 
 #single-img-html .flex-container #home-i-container a {
@@ -212,6 +216,13 @@ header i.fa-home:hover {
 #tags {
   width: 200px;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #tags .tag {
@@ -224,6 +235,10 @@ header i.fa-home:hover {
   font-size: 1.2rem;
 }
 
+#single-img-section {
+  position: relative;
+}
+
 #single-img-section .flex-container {
   height: 100%;
   width: 100%;
@@ -234,7 +249,6 @@ header i.fa-home:hover {
       -ms-flex: 1;
           flex: 1;
   padding-top: 50px;
-  text-align: center;
 }
 
 #single-img-section .flex-container #flex-item1 h3 {
@@ -244,7 +258,8 @@ header i.fa-home:hover {
 #single-img-section .flex-container #flex-item1 #aspect-ratio {
   margin-top: 50px;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
 #single-img-section .flex-container #flex-item1 .link-to-image {
@@ -256,10 +271,13 @@ header i.fa-home:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 1.2em;
+  font-size: 2em;
 }
 
 #single-img-section .flex-container #flex-item1 .link-to-image a {
+  font-weight: bolder;
+  position: absolute;
+  bottom: 2%;
   color: #14213d;
 }
 
@@ -286,7 +304,8 @@ header i.fa-home:hover {
 }
 
 #single-img-section .flex-container .flex-items img {
-  width: 100%;
+  width: 90%;
+  min-width: 800px;
   height: auto;
   border-radius: 20px;
 }
@@ -302,5 +321,10 @@ header i.fa-home:hover {
   border-radius: 20px;
   background-color: #14213d;
   color: white;
+}
+
+#date {
+  font-weight: lighter;
+  font-size: 1.4em;
 }
 /*# sourceMappingURL=style_desktop.css.map */

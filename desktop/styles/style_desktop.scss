@@ -35,8 +35,10 @@ header {
   top: 0;
   background-color: $PrimaryColor;
   color: white;
-  @include flexCenter();
+  display: flex;
   input {
+    min-width: 800px;
+    margin: 10px;
     flex: 1;
     font-size: 1.2rem;
   }
@@ -46,17 +48,21 @@ header {
   }
   h1 {
     flex: 1.1;
+    margin-left: 5px;
     text-align: left;
     font-family: "Sansita Swashed", cursive;
     font-size: 1.5rem;
+    align-self: center;
   }
   #header-icon-div {
     flex: 1.6;
   }
   i.fa-search {
     position: relative;
-    left: -30px;
+    margin-top: 23px;
+    left: -45px;
     color: black;
+    font-size: 1.3em;
   }
   i.fa-random {
     font-size: 2.5rem;
@@ -69,7 +75,7 @@ header {
   }
   i.fa-home {
     font-size: 2.5rem;
-    padding: 10px 20px;
+    margin: 10px 20px;
     transition: background-color 1s ease;
     &:hover {
       cursor: pointer;
@@ -148,7 +154,8 @@ header {
     flex: 0.1;
   }
   #home-i-container {
-    flex: 0.5;
+    flex: 0;
+
     a {
       color: white;
     }
@@ -161,6 +168,8 @@ header {
 #tags {
   width: 200px;
   margin: auto;
+  display: flex; 
+  flex-direction: column;
   .tag {
     background-color: $PrimaryColor;
     margin-top: 20px;
@@ -173,13 +182,13 @@ header {
 }
 
 #single-img-section {
+  position: relative;
   .flex-container {
     height: 100%;
     width: 100%;
     #flex-item1 {
       flex: 1;
       padding-top: 50px;
-      text-align: center;
       h3 {
         font-size: 1.8rem;
       }
@@ -187,7 +196,8 @@ header {
       #aspect-ratio {
         margin-top: 50px;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+        font-weight: bold;
       }
       .link-to-image {
         margin-top: 30px;
@@ -195,9 +205,12 @@ header {
         display: flex;
         justify-content: center;
 
-        font-size: 1.2em;
+        font-size: 2em;
 
         a {
+          font-weight: bolder;
+          position: absolute;
+          bottom: 2%;
           color: $PrimaryColor;
         }
       }
@@ -215,7 +228,8 @@ header {
       align-items: center;
       margin: 20px;
       img {
-        width: 100%;
+        width: 90%;
+        min-width: 800px;
         height: auto;
         border-radius: 20px;
       }
@@ -232,4 +246,9 @@ header {
       }
     }
   }
+}
+
+#date {
+  font-weight: lighter;
+  font-size: 1.4em;
 }
