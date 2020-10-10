@@ -64,114 +64,31 @@
     </div>
 
     <div class="mobile-ver">
-      <div class="main-container">
-        <header class="flex-container">
-          <!--Moved to gallery section in mobile-->
-          <div id="header-logo-div" class="logo flex-items">
-            <img src="./images/logo.jpg" alt="logo" />
-          </div>
-          <h1 class="site-name flex-items">Bad Wallpapers</h1>
-          <!------------------------------------------->
-          <input
-            type="text"
-            class="search flex-items"
-            placeholder="search by tag"
-          />
-          <i class="fa fa-search" aria-hidden="true"></i>
-
-          <div id="header-icon-div" class="flex-items">
-            <i class="fa fa-random"></i>
-          </div>
-        </header>
-
-        <section class="gallery">
-          <!--------------------------------------TOP LOGO AND SITE NAME----------------------------------------------------->
-          <div class="logo-and-site">
-            <div class="logo-mobile">
-              <img
-                src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e282f310-ab7d-4519-a888-3e339bcac12e/dafg7uw-c04ae279-87ad-46b8-834e-e4a967a25551.png/v1/fill/w_900,h_1123,q_75,strp/_original__anime_girl_render_by_lckiwi-dafg7uw.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sIm9iaiI6W1t7InBhdGgiOiIvZi9lMjgyZjMxMC1hYjdkLTQ1MTktYTg4OC0zZTMzOWJjYWMxMmUvZGFmZzd1dy1jMDRhZTI3OS04N2FkLTQ2YjgtODM0ZS1lNGE5NjdhMjU1NTEucG5nIiwid2lkdGgiOiI8PTkwMCIsImhlaWdodCI6Ijw9MTEyMyJ9XV19.Eb3_f2V-B8E9KNfdbAivf0iHbuU_CTr5CaSFspq6gaI"
-                alt="logo"
-              />
-            </div>
-            <h1 class="site-name-mobile">Bad Wallpapers</h1>
-          </div>
-          <!------------------------------------------------------------------------------------------------>
-          <h3 class="results">Results: <span class="result">2,112</span></h3>
-          <div class="images-container flex-container">
-            <!--Each wallpaper will be wrapped in this. I was thinking you generate this with JS-->
-            <a href="#">
-              <div class="wallpaper-container">
-                <div class="image-container">
-                  <img
-                    class="wallpaper"
-                    src="https://w.wallhaven.cc/full/39/wallhaven-3958v9.png"
-                    alt="wallpaper"
-                    width="200px"
-                    height="auto"
-                  />
+        <div class="main-container">
+            <header class="flex-container">
+                <input type="text" class="search flex-items" placeholder="search by tag">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <div id="header-icon-div" class="flex-items">
+                    <i class="fa fa-random"></i>
+                </div>        
+            </header>
+        
+            <section class="gallery">
+                <!--------------------------------------TOP LOGO AND SITE NAME----------------------------------------------------->
+                <div class="logo-and-site">
+                    <div class="logo-mobile">
+                        <img src="./images/assets/mascot.png" alt="logo">
+                    </div>
+                    <h1 class="site-name-mobile">Bad Wallpapers</h1>
                 </div>
-                <div class="aspect-ratio-container">
-                  <h3 class="aspect-ratio">1920x1080</h3>
-                </div>
-              </div>
-            </a>
-
-            <a href="#">
-              <div class="wallpaper-container">
-                <div class="image-container">
-                  <img
-                    class="wallpaper"
-                    src="https://w.wallhaven.cc/full/gj/wallhaven-gj3w6d.png"
-                    alt="wallpaper"
-                    width="200px"
-                    height="auto"
-                  />
-                </div>
-                <div class="aspect-ratio-container">
-                  <h3 class="aspect-ratio">1920x1080</h3>
-                </div>
-              </div>
-            </a>
-
-            <a href="#">
-              <div class="wallpaper-container">
-                <div class="image-container">
-                  <img
-                    class="wallpaper"
-                    src="https://w.wallhaven.cc/full/g8/wallhaven-g83m3d.jpg"
-                    alt="wallpaper"
-                    width="200px"
-                    height="auto"
-                  />
-                </div>
-                <div class="aspect-ratio-container">
-                  <h3 class="aspect-ratio">1920x1080</h3>
-                </div>
-              </div>
-            </a>
-
-            <a href="#">
-              <div class="wallpaper-container">
-                <div class="image-container">
-                  <img
-                    class="wallpaper"
-                    src="https://w.wallhaven.cc/full/xl/wallhaven-xlx8ez.png"
-                    alt="wallpaper"
-                    width="200px"
-                    height="auto"
-                  />
-                </div>
-                <div class="aspect-ratio-container">
-                  <h3 class="aspect-ratio">1920x1080</h3>
-                </div>
-              </div>
-            </a>
-          </div>
-        </section>
-      </div>
+                <!------------------------------------------------------------------------------------------------>
+                <h3 class="results">Results: <span id='result' class="result"></span></h3>
+                <div id='images-container' class="images-container flex-container"></div>
+            </section>
+        </div>
     </div>
-    <script src="./js/wallpapers.js"></script>
-    <script src="./js/homeTemplate.js"></script>
-    <script src="./js/app.js"></script>
-  </body>
+    <script src='./js/wallpapers.js'></script>
+    <script src='./js/homeTemplate.js'></script>
+    <script src='./js/app.js'></script>
+</body>
 </html>

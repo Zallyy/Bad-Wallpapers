@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Sansita+Swashed:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Sansita+Swashed:wght@100;400;700&display=swap");
 .desktop-ver {
   display: none;
 }
@@ -8,6 +8,10 @@
           box-sizing: border-box;
   margin: 0;
   color: black;
+}
+
+a:visited {
+  color: #14213D;
 }
 
 body {
@@ -30,6 +34,10 @@ body {
 }
 
 header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1003;
   padding: 5px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -64,8 +72,17 @@ header i {
   color: white;
 }
 
+header .fa-home {
+  margin-left: 0;
+  margin-right: 15px;
+}
+
 header .fa-random {
   margin-left: 15px;
+}
+
+header i:hover {
+  cursor: pointer;
 }
 
 header .fa-search {
@@ -78,6 +95,7 @@ header .fa-search {
 .gallery {
   padding: 0 10%;
   background: #f3f3f3;
+  width: 100%;
 }
 
 .gallery .logo-and-site {
@@ -107,6 +125,11 @@ header .fa-search {
      object-position: center;
   width: 100%;
   height: 100%;
+}
+
+.gallery .date {
+  margin-top: 15px;
+  font-weight: lighter;
 }
 
 .gallery .wallpaper-container {
@@ -162,5 +185,41 @@ header .fa-search {
 
 .gallery .wallpaper-container .aspect-ratio-container h3 {
   color: white;
+}
+
+.gallery .link-to-image {
+  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.gallery .link-to-image a {
+  color: #14213D;
+}
+
+.gallery .tags {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.gallery .tags .tag {
+  padding: 8px 12px;
+  font-size: 1.1em;
+  background: #14213D;
+  color: white;
+  outline: none;
+  border: none;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.gallery .tags .tag:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=style_mobile.css.map */

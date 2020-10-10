@@ -27,6 +27,7 @@
     <title>Bad Wallpapers</title>
   </head>
   <body>
+    <div class="desktop">
     <div id="single-img-html" class="desktop-ver">
       <header class="flex-container">
         <div id="header-logo-div" class="logo flex-items">
@@ -74,6 +75,49 @@
       </section>
       <div id="full-size"></div>
     </div>
+    </div>
+    
+     <div class="mobile">
+    <div class="main-container">
+        <header class="flex-container">
+            <a href="./index.html"><i class="fa fa-home"></i></a>
+            <input type="text" class="search flex-items" placeholder="search by tag">
+            <i class="fa fa-search" aria-hidden="true"></i>
+
+            <div id="header-icon-div" class="flex-items">
+                <i class="fa fa-random"></i>
+            </div>        
+        </header>
+
+        <section class="gallery">
+            <div class="logo-and-site">
+                <div class="logo-mobile">
+                    <img src="./images/assets/mascot.png" alt="logo">
+                </div>
+                <h1 class="site-name-mobile">Bad Wallpapers</h1>
+            </div>
+        
+            <p class="date" id="date"></p>
+            <a class='wallpaper-link' href="#">
+                <div class="wallpaper-container">
+                    <div class="image-container">
+                        <img class="wallpaper" id="wallpaper" src="" alt="wallpaper" width="200px" height="auto">
+                    </div>
+                    <div class="aspect-ratio-container hide">
+                        <h3 class="aspect-ratio" id="aspect-ratio">1920x1080</h3>
+                    </div>
+                </div>
+            </a>
+
+            <div class="link-to-image">
+                <a id='full-size' href="#">View Full Size</a>   
+            </div>
+
+            <div class="tags" id="tags"></div>
+        </section>
+    </div>
+  </div>
+
     <script src="./js/wallpapers.js"></script>
     <script src="./js/imageTemplate.js"></script>
   </body>

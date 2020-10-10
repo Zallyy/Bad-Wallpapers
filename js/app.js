@@ -14,4 +14,3 @@ images.forEach((img) => {
   });
 });
 
-// end of changed code

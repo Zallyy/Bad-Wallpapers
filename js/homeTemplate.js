@@ -1,8 +1,9 @@
-const results = document.getElementById("result");
+
+const results = document.getElementById('result');
 
 results.innerHTML = wallpapers.length;
-wallpapers.forEach(({ image, aspectRatio, id }) => {
-  document.querySelector("#images-container").innerHTML += `            
+wallpapers.forEach( ({image, aspectRatio, id}) => {
+    document.querySelector('#images-container').innerHTML += `            
     <a class='wallpaper-link' href="./wallpaper.html?=${id}">
         <div class="wallpaper-container">
             <div class="image-container">
@@ -12,5 +13,5 @@ wallpapers.forEach(({ image, aspectRatio, id }) => {
                 <h3 class="aspect-ratio">${aspectRatio}</h3>
             </div>
         </div>
-    </a>`;
-});
+    </a>`
+})
