@@ -29,7 +29,7 @@ const wallpapers = [
   },
   {
     image:
-      "https://images.pexels.com/photos/531321/pexels-photo-531321.jpeg?cs=srgb&dl=pexels-pixabay-531321.jpg&fm=jpg",
+      "https://images.pexels.com/photos/531321/pexels-photo-531321.jpeg",
     aspectRatio: "1920x1080",
     tags: ["Dark", "Forest", "Road", "Relaxing"],
     dateAdded: "10-09-20",
@@ -37,7 +37,7 @@ const wallpapers = [
   },
   {
     image:
-      "https://images.pexels.com/photos/4429509/pexels-photo-4429509.jpeg?cs=srgb&dl=pexels-ketut-subiyanto-4429509.jpg&fm=jpg",
+      "https://images.pexels.com/photos/4429509/pexels-photo-4429509.jpeg",
     aspectRatio: "1920x1080",
     tags: ["Bad Driving", "Cars", "Woman", "Asian"],
     dateAdded: "10-09-20",
@@ -45,7 +45,7 @@ const wallpapers = [
   },
   {
     image:
-      "https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?cs=srgb&dl=pexels-james-wheeler-417074.jpg&fm=jpg",
+      "https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg",
     aspectRatio: "1920x1080",
     tags: ["Nature", "Beautiful", "Relaxing", "Lake"],
     dateAdded: "10-09-20",
