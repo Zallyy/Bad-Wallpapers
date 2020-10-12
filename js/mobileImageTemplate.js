@@ -1,5 +1,4 @@
 
-console.log('hello')
 //Generate Page based off the URL 
 
 //Parse URL to see what wallpaper object we are grabbing
@@ -19,7 +18,7 @@ function CreatePage ({image, aspectRatio, tags, dateAdded}) {
     mFullsize.href = image;
     tags.forEach(tag => {
         mTagsEl.innerHTML += `
-        <button class="tag">${tag}</button>
+        <a href="./index.html?tags=${tag}"><button class="tag">${tag}</button></a>
         `
     })
     document.querySelectorAll('.wallpaper-link').forEach(link => link.href=`${image}`)
